@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Registration</title>
+</head>
+<body>
+    <section class="container">
+        <header>REGISTRATION FORM</header>
+        <form action="#" class="form">
+            <div class="input-inbox">
+                <label>First Name</label>
+                <input type="text" placeholder="Enter your first name" required>
+            </div>
+            <div class="input-inbox">
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter your last name" required>
+            </div>
+            <div class="column">
+                <div class="input-inbox">
+                <label>MI</label>
+                <input type="text" placeholder="Enter your middle initial" maxlength="1" required oninput="this.value = this.value.toUpperCase()"/>
+               </div>
+               <div class="input-inbox">
+                <label>Birthdate</label>
+                <input type="date" required/>
+               </div>
+            </div>
+          </div>
+
+        
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option" required>
+                    <div class="gender">
+                        <input type= "radio" id="check" name="gender" />
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type= "radio" id="check" name="gender" />
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type= "radio" id="check" name="gender" />
+                        <label for="other">Prefer not to say</label>
+                    </div>
+                </div>
+           </div>
+
+
+           <div class="column">
+            <div class="input-inbox">
+            <label>Mobile #</label>
+            <input type="text" placeholder="Enter your number" value="+63" maxlength="10" required onkeypress="return validateNumberInput(event)"/>
+           </div>
+           <div class="input-inbox">
+            <label>Tel #</label>
+            <input type="text" placeholder="Enter your telephone" value="+63" required onkeypress="return validateNumberInput(event)"/>
+           </div>
+        </div>
+      </div>
+           <div class="input-inbox">
+            <div class="input-inbox">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="column">
+            <div class="input-inbox">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username" required>
+           </div>
+           <div class="input-inbox">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password">
+           </div>
+        </div>
+      </div>
+
+      <br>
+
+     
+      <input type="submit" value="Submit" onclick="validation()" class="btn"> 
+      <input type="Reset" class="btn">
+
+
+     
+
+       </form>
+    </section>
+    
+</body>
+<script src="script.js"></script>
+</html>
+
